@@ -58,8 +58,8 @@ export default function Slider() {
                             </div>
                         )
                     })}
-                    <BtnSlider moveSlide={nextSlide} direction={"next"} style={{"display": showModal ? 'none' : undefined}}/>
-                    <BtnSlider moveSlide={prevSlide} direction={"prev"} style={{"display": showModal ? 'none' : undefined}}/>
+                    <BtnSlider moveSlide={nextSlide} direction={"next"} showModal={showModal} style={{"display": showModal ? 'none' : undefined}}/>
+                    <BtnSlider moveSlide={prevSlide} direction={"prev"} showModal={showModal} style={{"display": showModal ? 'none' : undefined}}/>
                     <div className="container-dots" style={{"display": showModal ? 'none' : undefined}}>
                         {Array.from({ length: data.length }).map((item, index) => ( //create array with length === # of slides for each dot to represent slide
                             <div
