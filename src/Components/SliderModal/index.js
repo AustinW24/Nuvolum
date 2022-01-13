@@ -32,7 +32,7 @@ export default function SliderModal({ setShowModal, data }) {
                     <div
                         key={obj.id}
                         className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <button onClick={() => setShowModal(false)} >X</button>
+                        <button onClick={() => setShowModal(false)}  style={{"cursor": "pointer"}}>X</button>
                         <img
                             src={process.env.PUBLIC_URL + require(`../Slider/imgs/${index + 1}.jpg`)}
                             alt={obj.alt} />
