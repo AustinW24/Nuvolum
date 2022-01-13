@@ -45,6 +45,10 @@
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+  .container-slider:hover {
+      cursor: pointer;
+      filter: brightness(70%);
+  }
 
   .slide {
       width: 100%;
